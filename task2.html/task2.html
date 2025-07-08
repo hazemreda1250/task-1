@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avition club</title>
+  </head>
+  <body>
+    <div>
+      <img src="imgs/logo.png" alt="logo" />
+    </div>
+    <h2>Avition club</h2>
+    <form action="" method="post">
+      <label for="Full Name">Full Name (in english)</label>
+      <input
+        type="text"
+        id="Full Name"
+        name="Full Name"
+        placeholder="Enter Full Name"
+        required
+      />
+      <div>
+        <label for="Phone Number">Phone Number</label>
+        <input
+          type="text"
+          id="Phone Number"
+          name="Phone Number"
+          placeholder="Enter Phone Nu"
+          required
+        />
+      </div>
+      <label for="Email">Email</label>
+      <input
+        type="text"
+        id="Email"
+        name="Email"
+        placeholder="Enter Email"
+        required
+      />
+      <div>
+        <label for="Academic year">Academic year</label>
+        <select name="Academic year" id="Academic year" required>
+          <option value="" selected="true" disabled="disabled">
+            Academic year
+          </option>
+          <option value="Freshman">Freshman</option>
+          <option value="Sophomore">Sophomore</option>
+          <option value="Junior">Junior</option>
+          <option value="Senior">Senior</option>
+        </select>
+      </div>
+      <div>
+        <label for="Department">Department</label>
+        <select name="Department" id="Department" required>
+          <option value="" selected="true" disabled="disabled">
+            Department
+          </option>
+          <option value="Electrical">Electrical</option>
+          <option value="Mecanical">Mecanical</option>
+          <option value="Architecture">Architecture</option>
+          <option value="civil">civil</option>
+        </select>
+        <div>
+          <label for="First preference">First preference </label>
+          <select name="First preference" id="First preference" required>
+            <option value="" selected="true" disabled="disabled">
+              First preference
+            </option>
+            <option value="Aurduino">Aurduino</option>
+            <option value="Web development">Web development</option>
+            <option value="embeded">embeded</option>
+          </select>
+        </div>
+        <div>
+          <label for="Second preference">Second preference</label>
+          <select name="Second preference" id="Second preference" required>
+            <option value="" selected="true" disabled="disabled">
+              Second preference
+            </option>
+            <option value="Aurduino">Aurduino</option>
+            <option value="Web development">Web development</option>
+            <option value="embeded">embeded</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </body>
+</html>
