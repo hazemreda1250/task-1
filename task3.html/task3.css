@@ -7,11 +7,15 @@
 }
 .container { 
     background-color: rgba(0, 0, 0, 0.6);
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 28px;
-
+    padding: 28px
+}
+.f{
+    display: flex;
+    flex-wrap: wrap;
 }
 .body {
     background-image: url(main_bg7.jpg) ;
@@ -29,28 +33,48 @@
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
     color: white;
+    font-size: 26px;
 
 }
    .info {
-    margin: 10px;
-    color: white;
-    
+    display: flex;
+    color: white; 
+    flex-wrap: wrap;
+    margin: 15px 0;
+    justify-content: space-between;
    }
-   
-   .box,.m,.n{
+   .box{
+    width: 49%;
+     margin-bottom: 15px;
+   }
+   .m{
+    width: 100%;
+    margin-bottom: 15px;
+   }
+   .box label{
       display:block ;
-      width: 100% ;
-      border-radius:5px ;
-      margin: 0 0 10px 0 ;
-      padding: 7px;
+      font-size: 20px;
      
      }
+     .m label{
+         display:block ;
+     font-size: 20px;
+     
+     }
+     .option{
+        width: 49%;
+        margin-bottom: 15px;
+     }
+     .box input,
+     .m input,
      .option select {
         width: 100%;
         margin: 0 0 10px 0 ;
         padding: 7px;
         border-radius:5px ;
-        font-size: 15px;
+       
+        appearance: none;
+        
      }
      .button input{
         width: 100%;
@@ -65,4 +89,28 @@
          background-color: rgba(95, 64, 145, 0.7);
          transition: 300ms;
          cursor: pointer;
+     }
+     @media (max-width: 700px){
+        .logo,
+        .container{
+            min-width: 300px;
+        }
+       .info{
+        overflow: scroll;
+        scrollbar-width: none;
+        max-height: 380px;
+
+       }
+       .box{
+        width: 100%;
+       }
+     }
+     @media(max-width: 415px){
+        .logo {min-width: 250px;
+        }
+     }
+     @media(max-width: 375px){
+        .logo{
+            min-width: 200px;
+        }
      }

@@ -12,16 +12,20 @@
       <img class="logo" src="imgs/logo.png" alt="logo" />
     </div>
     <h2 class="title">Avition club</h2>
-    <form class="info" action="" method="post">
+    <form  action="" method="post">
+      <div class="info">
+      <div class="box">
       <label for="Full Name">Full Name (in english)</label>
-      <input class="box" type="text"id="Full Name"name="Full Name" placeholder="Enter Full Name"required/>
-      <div>
+      <input type="text"id="Full Name"name="Full Name" placeholder="Enter Full Name"required/>
+     </div> 
+     <div class="box">
         <label for="Phone Number">Phone Number</label>
-        <input class="n" type="text"id="Phone Number"name="Phone Number"placeholder="Enter Phone Nu"required/>
+        <input  type="text"id="Phone Number"name="Phone Number"placeholder="Enter Phone Nu"required/>
       </div>
+      <div class="m">
       <label for="Email">Email</label>
-      <input class="m" type="text"id="Email"name="Email"placeholder="Enter Email"required/>
-     
+      <input  type="text"id="Email"name="Email"placeholder="Enter Email"required/>
+     </div>
       <div  class="option" >
         <label for="Academic year">Academic year</label>
         <select  name="Academic year" id="Academic year" required>
@@ -43,6 +47,7 @@
           <option value="Architecture">Architecture</option>
           <option value="civil">civil</option>
         </select>
+      </div>
         <div class="option">
           <label for="First preference">First preference </label>
           <select name="First preference" id="First preference" required>
@@ -63,13 +68,13 @@
             <option value="embeded">embeded</option>
           </select>
         </div>
-     
-      </div>
-
+       </div>
+      
       <div class="button">
         <input type="submit" value="Register" />
       </div>
     </div>
+  </div>
     </form>
 </body>
 </html>
